@@ -1,0 +1,92 @@
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(darkred, rgb(88, 84, 84));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.site-container {
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.white-page {
+    background-image: linear-gradient(rgb(88, 84, 84), darkred);
+    padding: 20px;
+    min-height: 1000px;
+    position: relative;
+}
+
+header {
+    background-color: #600002;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo {
+    color: #bb0b0e;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav a {
+    color: #ec1216;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.text-section p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: darkred;
+    text-align: center;
+}
+
+.images-box {
+    position: relative;
+    margin-top: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.images-box img {
+    position: absolute;
+    width: 280px;          
+    height: 200px;
+    object-fit: cover;      
+    border: 2px solid #000;
+    border-radius: 12px;    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+
+.img1 { transform: rotate(-10deg) translate(-40px, 0); z-index: 1; }
+.img2 { transform: rotate(5deg) translate(30px, -10px); z-index: 2; }
+.img3 { transform: rotate(-5deg) translate(10px, 20px); z-index: 3; }
+.img4 { transform: rotate(8deg) translate(-20px, 40px); z-index: 4; }
+.img5 { transform: rotate(-12deg) translate(50px, 60px); z-index: 5; }
+.img6 { transform: rotate(3deg) translate(-60px, 80px); z-index: 6; }
+.img7 { transform: rotate(-7deg) translate(0, 100px); z-index: 7; }
+.img8 { transform: rotate(10deg) translate(40px, 120px); z-index: 8; }
+
+.images-box img:hover {
+    z-index: 100 !important;   
+    transform: scale(1.3) translateY(-60px) rotate(0deg) !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+    border-color: #ff0000;    
+}
